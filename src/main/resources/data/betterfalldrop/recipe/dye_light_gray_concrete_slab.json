@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "concrete_slabs",
+  "ingredients": [
+    "minecraft:light_gray_dye",
+    [
+      "betterfalldrop:white_concrete_slab",
+      "betterfalldrop:orange_concrete_slab",
+      "betterfalldrop:magenta_concrete_slab",
+      "betterfalldrop:light_blue_concrete_slab",
+      "betterfalldrop:yellow_concrete_slab",
+      "betterfalldrop:lime_concrete_slab",
+      "betterfalldrop:pink_concrete_slab",
+      "betterfalldrop:gray_concrete_slab",
+      "betterfalldrop:cyan_concrete_slab",
+      "betterfalldrop:purple_concrete_slab",
+      "betterfalldrop:blue_concrete_slab",
+      "betterfalldrop:brown_concrete_slab",
+      "betterfalldrop:green_concrete_slab",
+      "betterfalldrop:red_concrete_slab",
+      "betterfalldrop:black_concrete_slab"
+    ]
+  ],
+  "result": {
+    "id": "betterfalldrop:light_gray_concrete_slab"
+  }
+}

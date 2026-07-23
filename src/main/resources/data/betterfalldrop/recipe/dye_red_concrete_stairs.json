@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "concrete_stairs",
+  "ingredients": [
+    "minecraft:red_dye",
+    [
+      "betterfalldrop:white_concrete_stairs",
+      "betterfalldrop:orange_concrete_stairs",
+      "betterfalldrop:magenta_concrete_stairs",
+      "betterfalldrop:light_blue_concrete_stairs",
+      "betterfalldrop:yellow_concrete_stairs",
+      "betterfalldrop:lime_concrete_stairs",
+      "betterfalldrop:pink_concrete_stairs",
+      "betterfalldrop:gray_concrete_stairs",
+      "betterfalldrop:light_gray_concrete_stairs",
+      "betterfalldrop:cyan_concrete_stairs",
+      "betterfalldrop:purple_concrete_stairs",
+      "betterfalldrop:blue_concrete_stairs",
+      "betterfalldrop:brown_concrete_stairs",
+      "betterfalldrop:green_concrete_stairs",
+      "betterfalldrop:black_concrete_stairs"
+    ]
+  ],
+  "result": {
+    "id": "betterfalldrop:red_concrete_stairs"
+  }
+}

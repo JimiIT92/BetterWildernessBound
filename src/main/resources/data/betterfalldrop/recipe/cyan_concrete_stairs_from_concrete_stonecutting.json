@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:cyan_concrete",
+  "result": {
+    "id": "betterfalldrop:cyan_concrete_stairs"
+  }
+}
