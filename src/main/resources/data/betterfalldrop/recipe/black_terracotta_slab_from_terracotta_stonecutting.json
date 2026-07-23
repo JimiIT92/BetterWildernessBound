@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:black_terracotta",
+  "result": {
+    "count": 2,
+    "id": "betterfalldrop:black_terracotta_slab"
+  }
+}

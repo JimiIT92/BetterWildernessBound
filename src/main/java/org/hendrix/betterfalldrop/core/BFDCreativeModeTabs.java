@@ -37,6 +37,30 @@ public final class BFDCreativeModeTabs {
                         addContent(
                                 output,
                                 BFDBlocks.CONCRETE_WALLS);
+                        addContent(
+                                output,
+                                BFDBlocks.TERRACOTTA_STAIRS,
+                                BFDBlocks.TERRACOTTA_SLAB,
+                                BFDBlocks.TERRACOTTA_WALL
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.DYED_TERRACOTTA_STAIRS);
+                        addContent(
+                                output,
+                                BFDBlocks.DYED_TERRACOTTA_SLABS);
+                        addContent(
+                                output,
+                                BFDBlocks.DYED_TERRACOTTA_WALLS);
+                        addContent(
+                                output,
+                                BFDBlocks.GLAZED_TERRACOTTA_STAIRS);
+                        addContent(
+                                output,
+                                BFDBlocks.GLAZED_TERRACOTTA_SLABS);
+                        addContent(
+                                output,
+                                BFDBlocks.GLAZED_TERRACOTTA_WALLS);
                     })
                     .build()
     );

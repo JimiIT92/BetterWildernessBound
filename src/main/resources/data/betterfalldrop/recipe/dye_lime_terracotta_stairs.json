@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "terracotta_stairs",
+  "ingredients": [
+    "minecraft:lime_dye",
+    [
+      "betterfalldrop:white_terracotta_stairs",
+      "betterfalldrop:orange_terracotta_stairs",
+      "betterfalldrop:magenta_terracotta_stairs",
+      "betterfalldrop:light_blue_terracotta_stairs",
+      "betterfalldrop:yellow_terracotta_stairs",
+      "betterfalldrop:pink_terracotta_stairs",
+      "betterfalldrop:gray_terracotta_stairs",
+      "betterfalldrop:light_gray_terracotta_stairs",
+      "betterfalldrop:cyan_terracotta_stairs",
+      "betterfalldrop:purple_terracotta_stairs",
+      "betterfalldrop:blue_terracotta_stairs",
+      "betterfalldrop:brown_terracotta_stairs",
+      "betterfalldrop:green_terracotta_stairs",
+      "betterfalldrop:red_terracotta_stairs",
+      "betterfalldrop:black_terracotta_stairs"
+    ]
+  ],
+  "result": {
+    "id": "betterfalldrop:lime_terracotta_stairs"
+  }
+}

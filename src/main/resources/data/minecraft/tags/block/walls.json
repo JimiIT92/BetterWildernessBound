@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#betterfalldrop:concrete_walls"
+    "#betterfalldrop:concrete_walls",
+    "#betterfalldrop:terracotta_walls",
+    "#betterfalldrop:glazed_terracotta_walls"
   ]
 }

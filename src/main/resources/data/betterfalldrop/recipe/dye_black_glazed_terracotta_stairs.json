@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "glazed_terracotta_stairs",
+  "ingredients": [
+    "minecraft:black_dye",
+    [
+      "betterfalldrop:white_glazed_terracotta_stairs",
+      "betterfalldrop:orange_glazed_terracotta_stairs",
+      "betterfalldrop:magenta_glazed_terracotta_stairs",
+      "betterfalldrop:light_blue_glazed_terracotta_stairs",
+      "betterfalldrop:yellow_glazed_terracotta_stairs",
+      "betterfalldrop:lime_glazed_terracotta_stairs",
+      "betterfalldrop:pink_glazed_terracotta_stairs",
+      "betterfalldrop:gray_glazed_terracotta_stairs",
+      "betterfalldrop:light_gray_glazed_terracotta_stairs",
+      "betterfalldrop:cyan_glazed_terracotta_stairs",
+      "betterfalldrop:purple_glazed_terracotta_stairs",
+      "betterfalldrop:blue_glazed_terracotta_stairs",
+      "betterfalldrop:brown_glazed_terracotta_stairs",
+      "betterfalldrop:green_glazed_terracotta_stairs",
+      "betterfalldrop:red_glazed_terracotta_stairs"
+    ]
+  ],
+  "result": {
+    "id": "betterfalldrop:black_glazed_terracotta_stairs"
+  }
+}

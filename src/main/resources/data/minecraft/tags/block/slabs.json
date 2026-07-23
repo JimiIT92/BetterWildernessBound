@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#betterfalldrop:concrete_slabs"
+    "#betterfalldrop:concrete_slabs",
+    "#betterfalldrop:terracotta_slabs",
+    "#betterfalldrop:glazed_terracotta_slabs"
   ]
 }

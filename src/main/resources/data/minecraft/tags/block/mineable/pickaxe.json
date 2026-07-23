@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "#betterfalldrop:concrete_slabs",
-    "#betterfalldrop:concrete_stairs"
+    "#betterfalldrop:concrete_stairs",
+    "#betterfalldrop:terracotta_slabs",
+    "#betterfalldrop:terracotta_stairs",
+    "#betterfalldrop:glazed_terracotta_slabs",
+    "#betterfalldrop:glazed_terracotta_stairs"
   ]
 }

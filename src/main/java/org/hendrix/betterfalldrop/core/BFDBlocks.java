@@ -25,8 +25,33 @@ public final class BFDBlocks {
     public static final ColorCollection<Block> CONCRETE_SLABS = registerSlabs("concrete", Blocks.CONCRETE);
     public static final ColorCollection<Block> CONCRETE_WALLS = registerWalls("concrete", Blocks.CONCRETE);
 
+    public static final Block TERRACOTTA_STAIRS = registerStair(Blocks.TERRACOTTA);
+    public static final Block TERRACOTTA_SLAB = registerSlab(Blocks.TERRACOTTA);
+    public static final Block TERRACOTTA_WALL = registerWall(Blocks.TERRACOTTA);
+
+    public static final ColorCollection<Block> DYED_TERRACOTTA_STAIRS = registerStairs("terracotta", Blocks.DYED_TERRACOTTA);
+    public static final ColorCollection<Block> DYED_TERRACOTTA_SLABS = registerSlabs("terracotta", Blocks.DYED_TERRACOTTA);
+    public static final ColorCollection<Block> DYED_TERRACOTTA_WALLS = registerWalls("terracotta", Blocks.DYED_TERRACOTTA);
+
+    public static final ColorCollection<Block> GLAZED_TERRACOTTA_STAIRS = registerStairs("glazed_terracotta", Blocks.GLAZED_TERRACOTTA);
+    public static final ColorCollection<Block> GLAZED_TERRACOTTA_SLABS = registerSlabs("glazed_terracotta", Blocks.GLAZED_TERRACOTTA);
+    public static final ColorCollection<Block> GLAZED_TERRACOTTA_WALLS = registerWalls("glazed_terracotta", Blocks.GLAZED_TERRACOTTA);
 
     //#endregion
+
+    /**
+     * Register a stair
+     *
+     * @param sourceBlock The source {@link Block}
+     * @return The registered {@link Block}
+     */
+    private static Block registerStair(final Block sourceBlock) {
+        return register(
+                sourceBlock.properties().blockId().identifier().getPath() + "_stairs",
+                (properties) -> new StairBlock(sourceBlock.defaultBlockState(), properties),
+                BlockBehaviour.Properties.ofFullCopy(sourceBlock)
+        );
+    }
 
     /**
      * Register some stairs
@@ -43,6 +68,20 @@ public final class BFDBlocks {
     }
 
     /**
+     * Register a slab
+     *
+     * @param sourceBlock The source {@link Block}
+     * @return The registered {@link Block}
+     */
+    private static Block registerSlab(final Block sourceBlock) {
+        return register(
+                sourceBlock.properties().blockId().identifier().getPath() + "_slab",
+               SlabBlock::new,
+                BlockBehaviour.Properties.ofFullCopy(sourceBlock)
+        );
+    }
+
+    /**
      * Register some slabs
      *
      * @param materialName The block material name
@@ -54,6 +93,20 @@ public final class BFDBlocks {
                 ColorCollection.VALUES,
                 ColorCollection.prefixWithColor(ColorCollection.create(materialName + "_slab")).map(BlockItemId::create),
                 (color, id) -> register(id.block().identifier().getPath(), SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(sourceBlocks.pick(color))));
+    }
+
+    /**
+     * Register a wall
+     *
+     * @param sourceBlock The source {@link Block}
+     * @return The registered {@link Block}
+     */
+    private static Block registerWall(final Block sourceBlock) {
+        return register(
+                sourceBlock.properties().blockId().identifier().getPath() + "_wall",
+                WallBlock::new,
+                BlockBehaviour.Properties.ofFullCopy(sourceBlock)
+        );
     }
 
     /**

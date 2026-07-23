@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "terracotta_slabs",
+  "ingredients": [
+    "minecraft:light_gray_dye",
+    [
+      "betterfalldrop:white_terracotta_slab",
+      "betterfalldrop:orange_terracotta_slab",
+      "betterfalldrop:magenta_terracotta_slab",
+      "betterfalldrop:light_blue_terracotta_slab",
+      "betterfalldrop:yellow_terracotta_slab",
+      "betterfalldrop:lime_terracotta_slab",
+      "betterfalldrop:pink_terracotta_slab",
+      "betterfalldrop:gray_terracotta_slab",
+      "betterfalldrop:cyan_terracotta_slab",
+      "betterfalldrop:purple_terracotta_slab",
+      "betterfalldrop:blue_terracotta_slab",
+      "betterfalldrop:brown_terracotta_slab",
+      "betterfalldrop:green_terracotta_slab",
+      "betterfalldrop:red_terracotta_slab",
+      "betterfalldrop:black_terracotta_slab"
+    ]
+  ],
+  "result": {
+    "id": "betterfalldrop:light_gray_terracotta_slab"
+  }
+}
