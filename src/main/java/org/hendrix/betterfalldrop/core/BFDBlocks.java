@@ -6,12 +6,15 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.references.BlockItemId;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 import org.hendrix.betterfalldrop.BetterFallDrop;
 import org.hendrix.betterfalldrop.utils.IdentifierUtils;
 
+import java.util.Locale;
 import java.util.function.Function;
 
 /**
@@ -61,6 +64,13 @@ public final class BFDBlocks {
     public static final Block CALCITE_BRICK_SLAB = registerSlab("calcite_brick", CALCITE_BRICKS);
     public static final Block CALCITE_BRICK_STAIRS = registerStair("calcite_brick", CALCITE_BRICKS);
     public static final Block CALCITE_BRICK_WALL = registerWall("calcite_brick", CALCITE_BRICKS);
+
+    public static final Block RED_MOSS_BLOCK = registerMossBlock(DyeColor.RED);
+    public static final Block RED_MOSS_CARPET = registerMossCarpet(DyeColor.RED);
+    public static final Block ORANGE_MOSS_BLOCK = registerMossBlock(DyeColor.ORANGE);
+    public static final Block ORANGE_MOSS_CARPET = registerMossCarpet(DyeColor.ORANGE);
+    public static final Block YELLOW_MOSS_BLOCK = registerMossBlock(DyeColor.YELLOW);
+    public static final Block YELLOW_MOSS_CARPET = registerMossCarpet(DyeColor.YELLOW);
 
     //#endregion
 
@@ -188,6 +198,35 @@ public final class BFDBlocks {
                 ColorCollection.VALUES,
                 ColorCollection.prefixWithColor(ColorCollection.create(materialName + "_wall")).map(BlockItemId::create),
                 (color, id) -> register(id.block().identifier().getPath(), WallBlock::new, BlockBehaviour.Properties.ofFullCopy(sourceBlocks.pick(color))));
+    }
+
+    /**
+     * Register a moss block
+     *
+     * @param color The moss color
+     * @return The registered {@link Block}
+     */
+    private static Block registerMossBlock(final DyeColor color) {
+        final String name = color.name().toLowerCase(Locale.ROOT) + "_moss";
+        return register(
+                name + "_block",
+                (properties) -> new BonemealableFeaturePlacerBlock(ResourceKey.create(Registries.FEATURE, IdentifierUtils.modded(name + "_patch_bonemeal")), properties),
+                BlockBehaviour.Properties.of().mapColor(color).strength(0.1F).sound(SoundType.MOSS).pushReaction(PushReaction.POPPED)
+        );
+    }
+
+    /**
+     * Register a moss carpet
+     *
+     * @param color The moss color
+     * @return The registered {@link Block}
+     */
+    private static Block registerMossCarpet(final DyeColor color) {
+        return register(
+                color.name().toLowerCase(Locale.ROOT) + "_moss_carpet",
+                CarpetBlock::new,
+                BlockBehaviour.Properties.of().mapColor(color).strength(0.1F).sound(SoundType.MOSS_CARPET).pushReaction(PushReaction.POPPED)
+        );
     }
 
     /**

@@ -212,5 +212,11 @@
   "block.betterfalldrop.calcite_bricks": "Calcite Bricks",
   "block.betterfalldrop.calcite_brick_slab": "Calcite Brick Slab",
   "block.betterfalldrop.calcite_brick_stairs": "Calcite Brick Stairs",
-  "block.betterfalldrop.calcite_brick_wall": "Calcite Brick Wall"
+  "block.betterfalldrop.calcite_brick_wall": "Calcite Brick Wall",
+  "block.betterfalldrop.red_moss_block": "Red Moss Block",
+  "block.betterfalldrop.red_moss_carpet": "Red Moss Carpet",
+  "block.betterfalldrop.orange_moss_block": "Orange Moss Block",
+  "block.betterfalldrop.orange_moss_carpet": "Orange Moss Carpet",
+  "block.betterfalldrop.yellow_moss_block": "Yellow Moss Block",
+  "block.betterfalldrop.yellow_moss_carpet": "Yellow Moss Carpet"
 }

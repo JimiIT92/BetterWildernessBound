@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "betterfalldrop:block/orange_moss_block"
+  }
+}

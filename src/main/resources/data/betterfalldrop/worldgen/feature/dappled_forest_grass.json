@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "type": "minecraft:weighted_state_provider",
+    "entries": [
+      {
+        "data": {
+          "Name": "minecraft:short_grass"
+        },
+        "weight": 3
+      },
+      {
+        "data": {
+          "Name": "betterfalldrop:red_moss_block"
+        },
+        "weight": 1
+      },
+      {
+        "data": {
+          "Name": "betterfalldrop:orange_moss_block"
+        },
+        "weight": 1
+      },
+      {
+        "data": {
+          "Name": "betterfalldrop:yellow_moss_block"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

@@ -104,7 +104,13 @@ public final class BFDCreativeModeTabs {
                                 BFDBlocks.CALCITE_BRICKS,
                                 BFDBlocks.CALCITE_BRICK_SLAB,
                                 BFDBlocks.CALCITE_BRICK_STAIRS,
-                                BFDBlocks.CALCITE_BRICK_WALL
+                                BFDBlocks.CALCITE_BRICK_WALL,
+                                BFDBlocks.RED_MOSS_BLOCK,
+                                BFDBlocks.RED_MOSS_CARPET,
+                                BFDBlocks.ORANGE_MOSS_BLOCK,
+                                BFDBlocks.ORANGE_MOSS_CARPET,
+                                BFDBlocks.YELLOW_MOSS_BLOCK,
+                                BFDBlocks.YELLOW_MOSS_CARPET
                         );
                     })
                     .build()

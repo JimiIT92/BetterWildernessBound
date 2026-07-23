@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "betterfalldrop:block/orange_moss_block"
+  }
+}
