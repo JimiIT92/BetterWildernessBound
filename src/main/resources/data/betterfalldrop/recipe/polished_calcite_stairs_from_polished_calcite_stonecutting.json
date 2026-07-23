@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "betterfalldrop:polished_calcite",
+  "result": {
+    "id": "betterfalldrop:polished_calcite_stairs"
+  }
+}

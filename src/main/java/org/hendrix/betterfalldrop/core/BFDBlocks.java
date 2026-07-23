@@ -49,6 +49,19 @@ public final class BFDBlocks {
     public static final ColorCollection<Block> STAINED_GLASS_SLABS = registerSlabs("stained_glass", Blocks.STAINED_GLASS);
     public static final ColorCollection<Block> STAINED_GLASS_WALLS = registerWalls("stained_glass", Blocks.STAINED_GLASS);
 
+    public static final Block CALCITE_STAIRS = registerStair(Blocks.CALCITE);
+    public static final Block CALCITE_SLAB = registerSlab(Blocks.CALCITE);
+    public static final Block CALCITE_WALL = registerWall(Blocks.CALCITE);
+    public static final Block POLISHED_CALCITE = register("polished_calcite", Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE));
+    public static final Block POLISHED_CALCITE_SLAB = registerSlab(POLISHED_CALCITE);
+    public static final Block POLISHED_CALCITE_STAIRS = registerStair(POLISHED_CALCITE);
+    public static final Block POLISHED_CALCITE_WALL = registerWall(POLISHED_CALCITE);
+    public static final Block CHISELED_CALCITE = register("chiseled_calcite", Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE));
+    public static final Block CALCITE_BRICKS = register("calcite_bricks", Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE));
+    public static final Block CALCITE_BRICK_SLAB = registerSlab("calcite_brick", CALCITE_BRICKS);
+    public static final Block CALCITE_BRICK_STAIRS = registerStair("calcite_brick", CALCITE_BRICKS);
+    public static final Block CALCITE_BRICK_WALL = registerWall("calcite_brick", CALCITE_BRICKS);
+
     //#endregion
 
     /**
@@ -58,8 +71,22 @@ public final class BFDBlocks {
      * @return The registered {@link Block}
      */
     private static Block registerStair(final Block sourceBlock) {
+        return registerStair(
+                sourceBlock.properties().blockId().identifier().getPath(),
+                sourceBlock
+        );
+    }
+
+    /**
+     * Register a stair
+     *
+     * @param materialName The block material name
+     * @param sourceBlock The source {@link Block}
+     * @return The registered {@link Block}
+     */
+    private static Block registerStair(final String materialName, final Block sourceBlock) {
         return register(
-                sourceBlock.properties().blockId().identifier().getPath() + "_stairs",
+                materialName + "_stairs",
                 (properties) -> new StairBlock(sourceBlock.defaultBlockState(), properties),
                 BlockBehaviour.Properties.ofFullCopy(sourceBlock)
         );
@@ -86,9 +113,23 @@ public final class BFDBlocks {
      * @return The registered {@link Block}
      */
     private static Block registerSlab(final Block sourceBlock) {
+        return registerSlab(
+                sourceBlock.properties().blockId().identifier().getPath(),
+                sourceBlock
+        );
+    }
+
+    /**
+     * Register a slab
+     *
+     * @param materialName The block material name
+     * @param sourceBlock The source {@link Block}
+     * @return The registered {@link Block}
+     */
+    private static Block registerSlab(final String materialName, final Block sourceBlock) {
         return register(
-                sourceBlock.properties().blockId().identifier().getPath() + "_slab",
-               SlabBlock::new,
+                materialName + "_slab",
+                SlabBlock::new,
                 BlockBehaviour.Properties.ofFullCopy(sourceBlock)
         );
     }
@@ -114,8 +155,22 @@ public final class BFDBlocks {
      * @return The registered {@link Block}
      */
     private static Block registerWall(final Block sourceBlock) {
+        return registerWall(
+                sourceBlock.properties().blockId().identifier().getPath(),
+                sourceBlock
+        );
+    }
+
+    /**
+     * Register a wall
+     *
+     * @param materialName The block material name
+     * @param sourceBlock The source {@link Block}
+     * @return The registered {@link Block}
+     */
+    private static Block registerWall(final String materialName, final Block sourceBlock) {
         return register(
-                sourceBlock.properties().blockId().identifier().getPath() + "_wall",
+                materialName + "_wall",
                 WallBlock::new,
                 BlockBehaviour.Properties.ofFullCopy(sourceBlock)
         );

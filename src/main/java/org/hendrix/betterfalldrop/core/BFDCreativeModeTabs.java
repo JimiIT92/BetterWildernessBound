@@ -91,6 +91,21 @@ public final class BFDCreativeModeTabs {
                                 output,
                                 BFDBlocks.STAINED_GLASS_WALLS
                         );
+                        addContent(
+                                output,
+                                BFDBlocks.CALCITE_STAIRS,
+                                BFDBlocks.CALCITE_SLAB,
+                                BFDBlocks.CALCITE_WALL,
+                                BFDBlocks.POLISHED_CALCITE,
+                                BFDBlocks.POLISHED_CALCITE_SLAB,
+                                BFDBlocks.POLISHED_CALCITE_STAIRS,
+                                BFDBlocks.POLISHED_CALCITE_WALL,
+                                BFDBlocks.CHISELED_CALCITE,
+                                BFDBlocks.CALCITE_BRICKS,
+                                BFDBlocks.CALCITE_BRICK_SLAB,
+                                BFDBlocks.CALCITE_BRICK_STAIRS,
+                                BFDBlocks.CALCITE_BRICK_WALL
+                        );
                     })
                     .build()
     );

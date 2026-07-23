@@ -4,6 +4,9 @@
     "#betterfalldrop:concrete_stairs",
     "#betterfalldrop:terracotta_stairs",
     "#betterfalldrop:glazed_terracotta_stairs",
-    "#betterfalldrop:glass_stairs"
+    "#betterfalldrop:glass_stairs",
+    "betterfalldrop:calcite_stairs",
+    "betterfalldrop:polished_calcite_stairs",
+    "betterfalldrop:calcite_brick_stairs"
   ]
 }

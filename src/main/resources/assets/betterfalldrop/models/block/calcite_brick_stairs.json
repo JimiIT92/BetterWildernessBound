@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "betterfalldrop:block/calcite_bricks",
+    "side": "betterfalldrop:block/calcite_bricks",
+    "top": "betterfalldrop:block/calcite_bricks"
+  }
+}

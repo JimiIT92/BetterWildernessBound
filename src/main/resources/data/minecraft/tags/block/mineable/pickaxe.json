@@ -1,13 +1,22 @@
 {
   "replace": false,
   "values": [
-    "#betterfalldrop:concrete_slabs",
     "#betterfalldrop:concrete_stairs",
-    "#betterfalldrop:terracotta_slabs",
+    "#betterfalldrop:concrete_slabs",
     "#betterfalldrop:terracotta_stairs",
-    "#betterfalldrop:glazed_terracotta_slabs",
+    "#betterfalldrop:terracotta_slabs",
     "#betterfalldrop:glazed_terracotta_stairs",
+    "#betterfalldrop:glazed_terracotta_slabs",
+    "#betterfalldrop:glass_stairs",
     "#betterfalldrop:glass_slabs",
-    "#betterfalldrop:glass_stairs"
+    "betterfalldrop:calcite_stairs",
+    "betterfalldrop:calcite_slab",
+    "betterfalldrop:polished_calcite_stairs",
+    "betterfalldrop:polished_calcite_slab",
+    "betterfalldrop:calcite_brick_stairs",
+    "betterfalldrop:calcite_brick_slab",
+    "betterfalldrop:polished_calcite",
+    "betterfalldrop:chiseled_calcite",
+    "betterfalldrop:calcite_bricks"
   ]
 }

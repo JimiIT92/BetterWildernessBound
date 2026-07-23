@@ -4,6 +4,9 @@
     "#betterfalldrop:concrete_walls",
     "#betterfalldrop:terracotta_walls",
     "#betterfalldrop:glazed_terracotta_walls",
-    "#betterfalldrop:glass_walls"
+    "#betterfalldrop:glass_walls",
+    "betterfalldrop:calcite_wall",
+    "betterfalldrop:polished_calcite_wall",
+    "betterfalldrop:calcite_brick_wall"
   ]
 }

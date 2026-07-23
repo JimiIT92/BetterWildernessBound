@@ -4,6 +4,9 @@
     "#betterfalldrop:concrete_slabs",
     "#betterfalldrop:terracotta_slabs",
     "#betterfalldrop:glazed_terracotta_slabs",
-    "#betterfalldrop:glass_slabs"
+    "#betterfalldrop:glass_slabs",
+    "betterfalldrop:calcite_slab",
+    "betterfalldrop:polished_calcite_slab",
+    "betterfalldrop:calcite_brick_slab"
   ]
 }

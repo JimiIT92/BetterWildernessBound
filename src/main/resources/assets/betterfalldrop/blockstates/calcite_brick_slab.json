@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "betterfalldrop:block/calcite_brick_slab"
+    },
+    "type=double": {
+      "model": "betterfalldrop:block/calcite_bricks"
+    },
+    "type=top": {
+      "model": "betterfalldrop:block/calcite_brick_slab_top"
+    }
+  }
+}

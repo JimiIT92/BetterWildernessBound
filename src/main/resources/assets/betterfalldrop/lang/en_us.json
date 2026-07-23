@@ -200,5 +200,17 @@
   "block.betterfalldrop.white_stained_glass_wall": "White Stained Glass Wall",
   "block.betterfalldrop.yellow_stained_glass_slab": "Yellow Stained Glass Slab",
   "block.betterfalldrop.yellow_stained_glass_stairs": "Yellow Stained Glass Stairs",
-  "block.betterfalldrop.yellow_stained_glass_wall": "Yellow Stained Glass Wall"
+  "block.betterfalldrop.yellow_stained_glass_wall": "Yellow Stained Glass Wall",
+  "block.betterfalldrop.calcite_slab": "Calcite Slab",
+  "block.betterfalldrop.calcite_stairs": "Calcite Stairs",
+  "block.betterfalldrop.calcite_wall": "Calcite Wall",
+  "block.betterfalldrop.polished_calcite": "Polished Calcite",
+  "block.betterfalldrop.polished_calcite_slab": "Polished Calcite Slab",
+  "block.betterfalldrop.polished_calcite_stairs": "Polished Calcite Stairs",
+  "block.betterfalldrop.polished_calcite_wall": "Polished Calcite Wall",
+  "block.betterfalldrop.chiseled_calcite": "Chiseled Calcite",
+  "block.betterfalldrop.calcite_bricks": "Calcite Bricks",
+  "block.betterfalldrop.calcite_brick_slab": "Calcite Brick Slab",
+  "block.betterfalldrop.calcite_brick_stairs": "Calcite Brick Stairs",
+  "block.betterfalldrop.calcite_brick_wall": "Calcite Brick Wall"
 }
