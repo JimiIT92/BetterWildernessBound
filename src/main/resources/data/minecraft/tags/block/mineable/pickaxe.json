@@ -6,6 +6,8 @@
     "#betterfalldrop:terracotta_slabs",
     "#betterfalldrop:terracotta_stairs",
     "#betterfalldrop:glazed_terracotta_slabs",
-    "#betterfalldrop:glazed_terracotta_stairs"
+    "#betterfalldrop:glazed_terracotta_stairs",
+    "#betterfalldrop:glass_slabs",
+    "#betterfalldrop:glass_stairs"
   ]
 }

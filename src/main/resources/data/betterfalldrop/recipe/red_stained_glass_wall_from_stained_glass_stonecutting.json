@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:red_stained_glass",
+  "result": {
+    "id": "betterfalldrop:red_stained_glass_wall"
+  }
+}

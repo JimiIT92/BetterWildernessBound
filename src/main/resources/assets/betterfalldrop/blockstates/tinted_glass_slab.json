@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "betterfalldrop:block/tinted_glass_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/tinted_glass"
+    },
+    "type=top": {
+      "model": "betterfalldrop:block/tinted_glass_slab_top"
+    }
+  }
+}

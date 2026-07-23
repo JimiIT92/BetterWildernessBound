@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_glass_stairs",
+  "ingredients": [
+    "minecraft:yellow_dye",
+    [
+      "betterfalldrop:white_stained_glass_stairs",
+      "betterfalldrop:orange_stained_glass_stairs",
+      "betterfalldrop:magenta_stained_glass_stairs",
+      "betterfalldrop:light_blue_stained_glass_stairs",
+      "betterfalldrop:lime_stained_glass_stairs",
+      "betterfalldrop:pink_stained_glass_stairs",
+      "betterfalldrop:gray_stained_glass_stairs",
+      "betterfalldrop:light_gray_stained_glass_stairs",
+      "betterfalldrop:cyan_stained_glass_stairs",
+      "betterfalldrop:purple_stained_glass_stairs",
+      "betterfalldrop:blue_stained_glass_stairs",
+      "betterfalldrop:brown_stained_glass_stairs",
+      "betterfalldrop:green_stained_glass_stairs",
+      "betterfalldrop:red_stained_glass_stairs",
+      "betterfalldrop:black_stained_glass_stairs"
+    ]
+  ],
+  "result": {
+    "id": "betterfalldrop:yellow_stained_glass_stairs"
+  }
+}

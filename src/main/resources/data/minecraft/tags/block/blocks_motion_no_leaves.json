@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#betterfalldrop:glass_stairs",
+    "#betterfalldrop:glass_slabs",
+    "#betterfalldrop:glass_walls"
+  ]
+}

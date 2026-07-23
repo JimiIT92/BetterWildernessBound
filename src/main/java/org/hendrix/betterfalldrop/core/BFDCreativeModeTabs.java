@@ -25,18 +25,9 @@ public final class BFDCreativeModeTabs {
     public static final CreativeModeTab BETTER_FALL_DROP = register(
             BetterFallDrop.MOD_ID,
             FabricCreativeModeTab.builder()
-                    .icon(() -> new ItemStack(BFDBlocks.CONCRETE_STAIRS.red()))
+                    .icon(() -> new ItemStack(BFDBlocks.GLAZED_TERRACOTTA_STAIRS.black()))
                     .title(Component.translatable("creativeTab." + BetterFallDrop.MOD_ID + "." + BetterFallDrop.MOD_ID))
                     .displayItems((params, output) -> {
-                        addContent(
-                                output,
-                                BFDBlocks.CONCRETE_STAIRS);
-                        addContent(
-                                output,
-                                BFDBlocks.CONCRETE_SLABS);
-                        addContent(
-                                output,
-                                BFDBlocks.CONCRETE_WALLS);
                         addContent(
                                 output,
                                 BFDBlocks.TERRACOTTA_STAIRS,
@@ -45,22 +36,61 @@ public final class BFDCreativeModeTabs {
                         );
                         addContent(
                                 output,
-                                BFDBlocks.DYED_TERRACOTTA_STAIRS);
+                                BFDBlocks.DYED_TERRACOTTA_STAIRS
+                        );
                         addContent(
                                 output,
-                                BFDBlocks.DYED_TERRACOTTA_SLABS);
+                                BFDBlocks.DYED_TERRACOTTA_SLABS
+                        );
                         addContent(
                                 output,
-                                BFDBlocks.DYED_TERRACOTTA_WALLS);
+                                BFDBlocks.DYED_TERRACOTTA_WALLS
+                        );
                         addContent(
                                 output,
-                                BFDBlocks.GLAZED_TERRACOTTA_STAIRS);
+                                BFDBlocks.CONCRETE_STAIRS
+                        );
                         addContent(
                                 output,
-                                BFDBlocks.GLAZED_TERRACOTTA_SLABS);
+                                BFDBlocks.CONCRETE_SLABS
+                        );
                         addContent(
                                 output,
-                                BFDBlocks.GLAZED_TERRACOTTA_WALLS);
+                                BFDBlocks.CONCRETE_WALLS
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.GLAZED_TERRACOTTA_STAIRS
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.GLAZED_TERRACOTTA_SLABS
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.GLAZED_TERRACOTTA_WALLS
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.GLASS_STAIRS,
+                                BFDBlocks.GLASS_SLAB,
+                                BFDBlocks.GLASS_WALL,
+                                BFDBlocks.TINTED_GLASS_STAIRS,
+                                BFDBlocks.TINTED_GLASS_SLAB,
+                                BFDBlocks.TINTED_GLASS_WALL
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.STAINED_GLASS_STAIRS
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.STAINED_GLASS_SLABS
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.STAINED_GLASS_WALLS
+                        );
                     })
                     .build()
     );
