@@ -3,6 +3,7 @@ package org.hendrix.betterfalldrop;
 import net.fabricmc.api.ModInitializer;
 import org.hendrix.betterfalldrop.core.BFDBlocks;
 import org.hendrix.betterfalldrop.core.BFDCreativeModeTabs;
+import org.hendrix.betterfalldrop.core.BFDEvents;
 import org.hendrix.betterfalldrop.core.BFDFeatures;
 
 /**
@@ -25,6 +26,7 @@ public final class BetterFallDrop implements ModInitializer {
         BFDBlocks.register();
         BFDCreativeModeTabs.register();
         BFDFeatures.register();
+        BFDEvents.register();
     }
 
 }

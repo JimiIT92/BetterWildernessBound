@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.storage.loot.providers.number.NumberProviders;
 import org.hendrix.betterfalldrop.BetterFallDrop;
 import org.hendrix.betterfalldrop.utils.IdentifierUtils;
 
@@ -212,7 +213,8 @@ public final class BFDBlocks {
         return register(
                 name + "_block",
                 (properties) -> new BonemealableFeaturePlacerBlock(ResourceKey.create(Registries.FEATURE, IdentifierUtils.modded(name + "_patch_bonemeal")), properties),
-                BlockBehaviour.Properties.of().mapColor(color).strength(0.1F).sound(SoundType.MOSS).pushReaction(PushReaction.POPPED)
+                BlockBehaviour.Properties.of().mapColor(color).strength(0.1F).sound(SoundType.MOSS).pushReaction(PushReaction.POPPED),
+                new Item.Properties().compostable(NumberProviders.COMPOSTABLE_MEDIUM)
         );
     }
 
@@ -226,7 +228,8 @@ public final class BFDBlocks {
         return register(
                 color.name().toLowerCase(Locale.ROOT) + "_moss_carpet",
                 CarpetBlock::new,
-                BlockBehaviour.Properties.of().mapColor(color).strength(0.1F).sound(SoundType.MOSS_CARPET).pushReaction(PushReaction.POPPED)
+                BlockBehaviour.Properties.of().mapColor(color).strength(0.1F).sound(SoundType.MOSS_CARPET).pushReaction(PushReaction.POPPED),
+                new Item.Properties().compostable(NumberProviders.COMPOSTABLE_LOW)
         );
     }
 
@@ -240,7 +243,8 @@ public final class BFDBlocks {
         return register(
                 color.name().toLowerCase(Locale.ROOT) + "_shrub",
                 BushBlock::new,
-                BlockBehaviour.Properties.ofFullCopy(Blocks.RED_SHRUB).mapColor(color)
+                BlockBehaviour.Properties.ofFullCopy(Blocks.RED_SHRUB).mapColor(color),
+                new Item.Properties().compostable(NumberProviders.COMPOSTABLE_LOW)
         );
     }
 
@@ -267,9 +271,22 @@ public final class BFDBlocks {
      * @return The registered {@link Block}
      */
     private static Block register(final String name, final Function<BlockBehaviour.Properties, Block> blockFactory, final BlockBehaviour.Properties properties) {
+        return register(name, blockFactory, properties, new Item.Properties());
+    }
+
+    /**
+     * Register a {@link Block} with additional item properties
+     *
+     * @param name The block name
+     * @param blockFactory The block factory
+     * @param properties The {@link BlockBehaviour.Properties block properties}
+     * @param itemProperties The {@link Item.Properties item properties}
+     * @return The registered {@link Block}
+     */
+    private static Block register(final String name, final Function<BlockBehaviour.Properties, Block> blockFactory, final BlockBehaviour.Properties properties, final Item.Properties itemProperties) {
         final Block block = registerBlockWithoutBlockItem(name, blockFactory, properties);
         final ResourceKey<Item> blockItemResourceKey = ResourceKey.create(Registries.ITEM, IdentifierUtils.modded(name));
-        final BlockItem blockItem = new BlockItem(block, new Item.Properties().setId(blockItemResourceKey).useBlockDescriptionPrefix());
+        final BlockItem blockItem = new BlockItem(block, itemProperties.setId(blockItemResourceKey).useBlockDescriptionPrefix());
         Registry.register(BuiltInRegistries.ITEM, blockItemResourceKey, blockItem);
         return block;
     }
