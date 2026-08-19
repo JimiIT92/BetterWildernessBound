@@ -48,14 +48,6 @@ public final class BFDCreativeModeTabs {
                         );
                         addContent(
                                 output,
-                                BFDBlocks.CONCRETE_STAIRS
-                        );
-                        addContent(
-                                output,
-                                BFDBlocks.CONCRETE_SLABS
-                        );
-                        addContent(
-                                output,
                                 BFDBlocks.CONCRETE_WALLS
                         );
                         addContent(

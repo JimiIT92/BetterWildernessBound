@@ -6,7 +6,7 @@
   "ground_state": {
     "type": "minecraft:simple_state_provider",
     "state": {
-      "Name": "betterfalldrop:orange_moss_block"
+      "id": "betterfalldrop:orange_moss_block"
     }
   },
   "replaceable": "#minecraft:moss_replaceable",

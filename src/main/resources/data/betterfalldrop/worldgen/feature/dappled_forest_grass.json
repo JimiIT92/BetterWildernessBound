@@ -5,25 +5,25 @@
     "entries": [
       {
         "data": {
-          "Name": "minecraft:short_grass"
+          "id": "minecraft:short_grass"
         },
         "weight": 3
       },
       {
         "data": {
-          "Name": "betterfalldrop:red_moss_block"
+          "id": "betterfalldrop:red_moss_block"
         },
         "weight": 1
       },
       {
         "data": {
-          "Name": "betterfalldrop:orange_moss_block"
+          "id": "betterfalldrop:orange_moss_block"
         },
         "weight": 1
       },
       {
         "data": {
-          "Name": "betterfalldrop:yellow_moss_block"
+          "id": "betterfalldrop:yellow_moss_block"
         },
         "weight": 1
       }

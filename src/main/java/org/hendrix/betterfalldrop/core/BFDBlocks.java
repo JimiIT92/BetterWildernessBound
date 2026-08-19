@@ -24,8 +24,6 @@ public final class BFDBlocks {
 
     //#region Blocks
 
-    public static final ColorCollection<Block> CONCRETE_STAIRS = registerStairs("concrete", Blocks.CONCRETE);
-    public static final ColorCollection<Block> CONCRETE_SLABS = registerSlabs("concrete", Blocks.CONCRETE);
     public static final ColorCollection<Block> CONCRETE_WALLS = registerWalls("concrete", Blocks.CONCRETE);
 
     public static final Block TERRACOTTA_STAIRS = registerStair(Blocks.TERRACOTTA);
