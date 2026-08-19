@@ -102,7 +102,9 @@ public final class BFDCreativeModeTabs {
                                 BFDBlocks.ORANGE_MOSS_BLOCK,
                                 BFDBlocks.ORANGE_MOSS_CARPET,
                                 BFDBlocks.YELLOW_MOSS_BLOCK,
-                                BFDBlocks.YELLOW_MOSS_CARPET
+                                BFDBlocks.YELLOW_MOSS_CARPET,
+                                BFDBlocks.ORANGE_SHRUB,
+                                BFDBlocks.YELLOW_SHRUB
                         );
                     })
                     .build()

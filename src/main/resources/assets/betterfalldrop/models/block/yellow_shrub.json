@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "betterfalldrop:block/yellow_shrub"
+  }
+}

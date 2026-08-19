@@ -70,6 +70,9 @@ public final class BFDBlocks {
     public static final Block YELLOW_MOSS_BLOCK = registerMossBlock(DyeColor.YELLOW);
     public static final Block YELLOW_MOSS_CARPET = registerMossCarpet(DyeColor.YELLOW);
 
+    public static final Block ORANGE_SHRUB = registerShrub(DyeColor.ORANGE);
+    public static final Block YELLOW_SHRUB = registerShrub(DyeColor.YELLOW);
+
     //#endregion
 
     /**
@@ -224,6 +227,20 @@ public final class BFDBlocks {
                 color.name().toLowerCase(Locale.ROOT) + "_moss_carpet",
                 CarpetBlock::new,
                 BlockBehaviour.Properties.of().mapColor(color).strength(0.1F).sound(SoundType.MOSS_CARPET).pushReaction(PushReaction.POPPED)
+        );
+    }
+
+    /**
+     * Register a shrub
+     *
+     * @param color The shrub color
+     * @return The registered {@link Block}
+     */
+    private static Block registerShrub(final DyeColor color) {
+        return register(
+                color.name().toLowerCase(Locale.ROOT) + "_shrub",
+                BushBlock::new,
+                BlockBehaviour.Properties.ofFullCopy(Blocks.RED_SHRUB).mapColor(color)
         );
     }
 
