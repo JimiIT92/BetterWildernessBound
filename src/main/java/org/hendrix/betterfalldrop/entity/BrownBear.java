@@ -4,14 +4,19 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.ai.goal.MoveToBlockGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.fish.Salmon;
 import net.minecraft.world.entity.animal.polarbear.PolarBear;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.block.BeehiveBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import org.hendrix.betterfalldrop.core.BFDEntityTypes;
@@ -40,7 +45,8 @@ public final class BrownBear extends PolarBear {
     @Override
     protected void registerGoals() {
         super.registerGoals();
-        this.targetSelector.addGoal(6, new BrownBearCatchSalmonGoal());
+        this.targetSelector.addGoal(6, new BrownBearReachBeeHiveGoal());
+        this.targetSelector.addGoal(7, new BrownBearCatchSalmonGoal());
     }
 
     /**
@@ -127,6 +133,88 @@ public final class BrownBear extends PolarBear {
         @Override
         protected @NonNull AABB getTargetSearchArea(final double followDistance) {
             return this.mob.getBoundingBox().inflate(followDistance, 1, followDistance);
+        }
+    }
+
+    /**
+     * Make the brown bear reach a {@link Blocks#BEEHIVE} or a {@link Blocks#BEE_NEST}
+     */
+    private class BrownBearReachBeeHiveGoal extends MoveToBlockGoal {
+
+        private static final int MAX_HONEY_EXTRACTION_TICKS = 100;
+        private int honeyExtractionTicks;
+        private boolean isExtractingHoney;
+
+        /**
+         * Constructor. Set the goal properties
+         */
+        public BrownBearReachBeeHiveGoal() {
+            super(BrownBear.this, 1.5F, 15, 3);
+            this.honeyExtractionTicks = MAX_HONEY_EXTRACTION_TICKS;
+            this.isExtractingHoney = false;
+        }
+
+        /**
+         * Check if the block is a valid target
+         *
+         * @param level The {@link LevelReader} instance
+         * @param pos The {@link BlockPos} to check
+         * @return True if is a {@link Blocks#BEEHIVE} or a {@link Blocks#BEE_NEST}
+         */
+        @Override
+        protected boolean isValidTarget(final LevelReader level, final @NonNull BlockPos pos) {
+            final BlockState blockState = level.getBlockState(pos);
+            return blockState.is(BlockTags.BEEHIVES) && blockState.getValue(BeehiveBlock.HONEY_LEVEL) > 0;
+        }
+
+        /**
+         * Make the brown bear standing when it reaches the target
+         */
+        @Override
+        public void tick() {
+            super.tick();
+            if(this.isExtractingHoney) {
+                this.honeyExtractionTicks--;
+            }
+            if(this.honeyExtractionTicks <= 0) {
+                final Level level = BrownBear.this.level();
+                final BlockState blockState = level.getBlockState(this.blockPos);
+                if(this.isValidTarget(level, this.blockPos)) {
+                    level.setBlockAndUpdate(this.blockPos, blockState.setValue(BeehiveBlock.HONEY_LEVEL, 0));
+                }
+                this.isExtractingHoney = false;
+                this.honeyExtractionTicks = MAX_HONEY_EXTRACTION_TICKS;
+                BrownBear.this.setStanding(false);
+            }
+            if (this.isReachedTarget() && !this.isExtractingHoney) {
+                BrownBear.this.setStanding(true);
+                this.isExtractingHoney = true;
+                this.honeyExtractionTicks = MAX_HONEY_EXTRACTION_TICKS;
+            }
+        }
+
+        /**
+         * Check whether the brown bear reached its target
+         *
+         * @return True if it reached a bee hive or bee nest or is under it
+         */
+        @Override
+        protected boolean isReachedTarget() {
+            final Level level = BrownBear.this.level();
+            final BlockPos above = BrownBear.this.blockPosition().above();
+            return super.isReachedTarget() ||
+            this.isValidTarget(level, above) ||
+            (level.isEmptyBlock(above) && this.isValidTarget(level, above.above()));
+        }
+
+        /**
+         * Check if the goal can continue
+         *
+         * @return True if the bear is still looking for the bee hive or bee nest or is extracting honey
+         */
+        @Override
+        public boolean canContinueToUse() {
+            return super.canContinueToUse() || this.isExtractingHoney;
         }
     }
 
