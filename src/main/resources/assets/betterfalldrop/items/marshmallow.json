@@ -1,0 +1,42 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "betterfalldrop:item/marshmallow"
+    },
+    "on_true": {
+      "type": "minecraft:range_dispatch",
+      "entries": [
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "betterfalldrop:item/cooking_marshmallow_2"
+          },
+          "threshold": 0.25
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "betterfalldrop:item/cooking_marshmallow_3"
+          },
+          "threshold": 0.5
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "betterfalldrop:item/cooking_marshmallow_4"
+          },
+          "threshold": 0.75
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "betterfalldrop:item/cooking_marshmallow_1"
+      },
+      "property": "minecraft:use_duration",
+      "scale": 0.005
+    },
+    "property": "minecraft:using_item"
+  }
+}

@@ -191,5 +191,7 @@
   "block.betterfalldrop.yellow_shrub": "Yellow Shrub",
   "block.betterfalldrop.potted_red_shrub": "Potted Red Shrub",
   "block.betterfalldrop.potted_orange_shrub": "Potted Orange Shrub",
-  "block.betterfalldrop.potted_yellow_shrub": "Potted Yellow Shrub"
+  "block.betterfalldrop.potted_yellow_shrub": "Potted Yellow Shrub",
+  "item.betterfalldrop.marshmallow": "Marshmallow",
+  "item.betterfalldrop.cooked_marshmallow": "Cooked Marshmallow"
 }

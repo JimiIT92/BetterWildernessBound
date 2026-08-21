@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": "minecraft:stick",
+    "#": "minecraft:sugar"
+  },
+  "pattern": [
+    " #",
+    "X "
+  ],
+  "result": {
+    "id": "betterfalldrop:marshmallow"
+  }
+}

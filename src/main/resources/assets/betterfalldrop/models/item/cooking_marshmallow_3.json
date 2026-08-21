@@ -1,0 +1,6 @@
+{
+  "parent": "betterfalldrop:item/cooking_marshmallow_1",
+  "textures": {
+    "layer0": "betterfalldrop:item/cooking_marshmallow_3"
+  }
+}
