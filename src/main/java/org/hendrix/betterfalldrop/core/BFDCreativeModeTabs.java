@@ -106,7 +106,8 @@ public final class BFDCreativeModeTabs {
                                 BFDBlocks.ORANGE_SHRUB,
                                 BFDBlocks.YELLOW_SHRUB,
                                 BFDItems.MARSHMALLOW,
-                                BFDItems.COOKED_MARSHMALLOW
+                                BFDItems.COOKED_MARSHMALLOW,
+                                BFDItems.BROWN_BEAR_SPAWN_EGG
                         );
                     })
                     .build()

@@ -9,6 +9,10 @@ base {
     archivesName = project.archives_base_name
 }
 
+loom {
+    accessWidenerPath = file("src/main/resources/${project.mod_id}.accesswidener")
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.snapshot_version}"
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"

@@ -193,5 +193,7 @@
   "block.betterfalldrop.potted_orange_shrub": "Potted Orange Shrub",
   "block.betterfalldrop.potted_yellow_shrub": "Potted Yellow Shrub",
   "item.betterfalldrop.marshmallow": "Marshmallow",
-  "item.betterfalldrop.cooked_marshmallow": "Cooked Marshmallow"
+  "item.betterfalldrop.cooked_marshmallow": "Cooked Marshmallow",
+  "item.betterfalldrop.brown_bear_spawn_egg": "Brown Bear Spawn Egg",
+  "entity.betterfalldrop.brown_bear": "Brown Bear"
 }

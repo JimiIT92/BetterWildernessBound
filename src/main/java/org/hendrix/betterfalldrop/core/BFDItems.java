@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.component.Consumables;
 import org.hendrix.betterfalldrop.BetterFallDrop;
 import org.hendrix.betterfalldrop.item.MarshmallowItem;
@@ -23,6 +24,12 @@ public final class BFDItems {
 
     public static final Item MARSHMALLOW = registerMarshmallow(false);
     public static final Item COOKED_MARSHMALLOW = registerMarshmallow(true);
+
+    public static final Item BROWN_BEAR_SPAWN_EGG = register(
+            "brown_bear_spawn_egg",
+            SpawnEggItem::new,
+            new Item.Properties().spawnEgg(BFDEntityTypes.BROWN_BEAR)
+    );
 
     //#endregion
 

@@ -20,6 +20,8 @@ public final class BetterFallDrop implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        BFDSounds.register();
+        BFDEntityTypes.register();
         BFDItems.register();
         BFDBlocks.register();
         BFDCreativeModeTabs.register();

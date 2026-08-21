@@ -10,12 +10,16 @@
     "sources": "${mod_url}",
     "issues": "${mod_url}/issues"
   },
+  "accessWidener" : "${mod_id}.accesswidener",
   "license": "MIT",
   "icon": "assets/${mod_id}/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       "org.hendrix.${mod_id}.${archives_base_name}"
+    ],
+    "client": [
+      "org.hendrix.${mod_id}.client.${archives_base_name}Client"
     ]
   },
   "mixins": [
