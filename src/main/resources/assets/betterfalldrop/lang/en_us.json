@@ -188,5 +188,8 @@
   "block.betterfalldrop.yellow_moss_block": "Yellow Moss Block",
   "block.betterfalldrop.yellow_moss_carpet": "Yellow Moss Carpet",
   "block.betterfalldrop.orange_shrub": "Orange Shrub",
-  "block.betterfalldrop.yellow_shrub": "Yellow Shrub"
+  "block.betterfalldrop.yellow_shrub": "Yellow Shrub",
+  "block.betterfalldrop.potted_red_shrub": "Potted Red Shrub",
+  "block.betterfalldrop.potted_orange_shrub": "Potted Orange Shrub",
+  "block.betterfalldrop.potted_yellow_shrub": "Potted Yellow Shrub"
 }

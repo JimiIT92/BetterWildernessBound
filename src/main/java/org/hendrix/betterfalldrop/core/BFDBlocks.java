@@ -74,6 +74,10 @@ public final class BFDBlocks {
     public static final Block ORANGE_SHRUB = registerShrub(DyeColor.ORANGE);
     public static final Block YELLOW_SHRUB = registerShrub(DyeColor.YELLOW);
 
+    public static final Block POTTED_RED_SHRUB = registerFlowerPot(Blocks.RED_SHRUB);
+    public static final Block POTTED_ORANGE_SHRUB = registerFlowerPot(ORANGE_SHRUB);
+    public static final Block POTTED_YELLOW_SHRUB = registerFlowerPot(YELLOW_SHRUB);
+
     //#endregion
 
     /**
@@ -245,6 +249,20 @@ public final class BFDBlocks {
                 BushBlock::new,
                 BlockBehaviour.Properties.ofFullCopy(Blocks.RED_SHRUB).mapColor(color),
                 new Item.Properties().compostable(NumberProviders.COMPOSTABLE_LOW)
+        );
+    }
+
+    /**
+     * Register a flower pot
+     *
+     * @param block The {@link Block} that can be potted
+     * @return The registered {@link Block}
+     */
+    private static Block registerFlowerPot(final Block block) {
+        return registerBlockWithoutBlockItem(
+                "potted_" + block.properties().blockId().identifier().getPath(),
+                properties -> new FlowerPotBlock(block, properties),
+                Blocks.flowerPotProperties()
         );
     }
 
