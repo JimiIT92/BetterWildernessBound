@@ -3,7 +3,8 @@
   "package": "org.hendrix.betterfalldrop.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "GrassBlockMixin"
+    "GrassBlockMixin",
+    "TreeGrowerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
