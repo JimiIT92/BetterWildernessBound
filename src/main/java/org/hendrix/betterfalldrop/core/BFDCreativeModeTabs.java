@@ -25,14 +25,12 @@ public final class BFDCreativeModeTabs {
     public static final CreativeModeTab BETTER_FALL_DROP = register(
             BetterFallDrop.MOD_ID,
             FabricCreativeModeTab.builder()
-                    .icon(() -> new ItemStack(BFDBlocks.GLAZED_TERRACOTTA_STAIRS.black()))
+                    .icon(() -> new ItemStack(BFDBlocks.ORANGE_SHRUB))
                     .title(Component.translatable("creativeTab." + BetterFallDrop.MOD_ID + "." + BetterFallDrop.MOD_ID))
                     .displayItems((params, output) -> {
                         addContent(
                                 output,
-                                BFDBlocks.TERRACOTTA_STAIRS,
-                                BFDBlocks.TERRACOTTA_SLAB,
-                                BFDBlocks.TERRACOTTA_WALL
+                                BFDBlocks.TERRACOTTA_STAIRS
                         );
                         addContent(
                                 output,
@@ -40,7 +38,15 @@ public final class BFDCreativeModeTabs {
                         );
                         addContent(
                                 output,
+                                BFDBlocks.TERRACOTTA_SLAB
+                        );
+                        addContent(
+                                output,
                                 BFDBlocks.DYED_TERRACOTTA_SLABS
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.TERRACOTTA_WALL
                         );
                         addContent(
                                 output,
@@ -85,24 +91,24 @@ public final class BFDCreativeModeTabs {
                         );
                         addContent(
                                 output,
-                                BFDBlocks.CALCITE_STAIRS,
-                                BFDBlocks.CALCITE_SLAB,
-                                BFDBlocks.CALCITE_WALL,
-                                BFDBlocks.POLISHED_CALCITE,
-                                BFDBlocks.POLISHED_CALCITE_SLAB,
-                                BFDBlocks.POLISHED_CALCITE_STAIRS,
-                                BFDBlocks.POLISHED_CALCITE_WALL,
-                                BFDBlocks.CHISELED_CALCITE,
-                                BFDBlocks.CALCITE_BRICKS,
-                                BFDBlocks.CALCITE_BRICK_SLAB,
-                                BFDBlocks.CALCITE_BRICK_STAIRS,
-                                BFDBlocks.CALCITE_BRICK_WALL,
                                 BFDBlocks.RED_MOSS_BLOCK,
                                 BFDBlocks.RED_MOSS_CARPET,
                                 BFDBlocks.ORANGE_MOSS_BLOCK,
                                 BFDBlocks.ORANGE_MOSS_CARPET,
                                 BFDBlocks.YELLOW_MOSS_BLOCK,
                                 BFDBlocks.YELLOW_MOSS_CARPET,
+                                BFDBlocks.CALCITE_STAIRS,
+                                BFDBlocks.CALCITE_SLAB,
+                                BFDBlocks.CALCITE_WALL,
+                                BFDBlocks.CHISELED_CALCITE,
+                                BFDBlocks.POLISHED_CALCITE,
+                                BFDBlocks.POLISHED_CALCITE_STAIRS,
+                                BFDBlocks.POLISHED_CALCITE_SLAB,
+                                BFDBlocks.POLISHED_CALCITE_WALL,
+                                BFDBlocks.CALCITE_BRICKS,
+                                BFDBlocks.CALCITE_BRICK_STAIRS,
+                                BFDBlocks.CALCITE_BRICK_SLAB,
+                                BFDBlocks.CALCITE_BRICK_WALL,
                                 BFDBlocks.ORANGE_SHRUB,
                                 BFDBlocks.YELLOW_SHRUB,
                                 BFDItems.MARSHMALLOW,
