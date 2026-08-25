@@ -195,5 +195,10 @@
   "item.betterfalldrop.marshmallow": "Marshmallow",
   "item.betterfalldrop.cooked_marshmallow": "Cooked Marshmallow",
   "item.betterfalldrop.brown_bear_spawn_egg": "Brown Bear Spawn Egg",
-  "entity.betterfalldrop.brown_bear": "Brown Bear"
+  "entity.betterfalldrop.brown_bear": "Brown Bear",
+  "subtitles.betterfalldrop.entity.brown_bear.ambient": "Brown Bear groans",
+  "subtitles.betterfalldrop.entity.brown_bear.ambient_baby": "Baby Brown Bear hums",
+  "subtitles.betterfalldrop.entity.brown_bear.death": "Brown Bear dies",
+  "subtitles.betterfalldrop.entity.brown_bear.hurt": "Brown Bear hurts",
+  "subtitles.betterfalldrop.entity.brown_bear.warning": "Brown Bear roars"
 }
