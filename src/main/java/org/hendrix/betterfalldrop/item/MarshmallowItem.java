@@ -2,16 +2,19 @@ package org.hendrix.betterfalldrop.item;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.tags.BlockTags;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ClipBlockStateContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.CampfireBlock;
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.Vec3;
 import org.hendrix.betterfalldrop.core.BFDItems;
 import org.jspecify.annotations.NonNull;
 
@@ -104,12 +107,16 @@ public final class MarshmallowItem extends Item {
      * @return True if is near a lit campfire
      */
     private boolean isNearLitCampfire(final Level level, final Player player) {
-        final BlockPos pos = player.blockPosition();
-        final Direction direction = player.getDirection();
-        final BlockPos facingPos = pos.relative(direction);
-        return isLitCampfire(level, pos) ||
-                isLitCampfire(level, facingPos) ||
-                (level.isEmptyBlock(facingPos) && isLitCampfire(level, pos.relative(direction, 2)));
+        if(!level.isClientSide() && player instanceof ServerPlayer serverPlayer) {
+            final BlockPos pos = player.blockPosition();
+            final Direction direction = player.getDirection();
+            final HitResult hitResult = serverPlayer.getCamera().pick(2.5F, 0F, false);
+            if (hitResult.getType() == HitResult.Type.BLOCK) {
+                final BlockPos hitPos = ((BlockHitResult)hitResult).getBlockPos();
+                return CampfireBlock.isLitCampfire(level.getBlockState(hitPos));
+            }
+        }
+        return false;
     }
 
     /**
@@ -117,11 +124,21 @@ public final class MarshmallowItem extends Item {
      *
      * @param level The {@link Level} reference
      * @param pos The {@link BlockPos} to check
+     * @param direction The {@link Direction} to check
      * @return True if there is a lit campfire
      */
-    private boolean isLitCampfire(final Level level, final BlockPos pos) {
-        final BlockState blockState = level.getBlockState(pos);
-        return blockState.is(BlockTags.CAMPFIRES) && blockState.getValue(CampfireBlock.LIT);
+    private boolean isNearLitCampfire(final Level level, final BlockPos pos, final Direction direction) {
+        final BlockHitResult campfireHit = level.isBlockInLine(
+                new ClipBlockStateContext(
+                        new Vec3(pos),
+                        new Vec3(pos.relative(direction, 1)),
+                        CampfireBlock::isLitCampfire
+                )
+        );
+        final BlockPos campfirePos = campfireHit.getBlockPos();
+        return campfireHit.getType().equals(HitResult.Type.BLOCK) &&
+                level.isEmptyBlock(campfirePos.above()) &&
+                level.isEmptyBlock(campfirePos.relative(direction.getOpposite()));
     }
 
 }

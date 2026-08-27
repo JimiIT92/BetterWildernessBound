@@ -54,7 +54,7 @@ a Poplar Tree with the Red, Yellow or Orange leaves respectively, and not a rand
 
 Marshmallows are a new type of food that can be crafted using a stick and a piece of sugar.
 
-They can be cooked while standing very close to a campfire that has no block in front of it.<br/>
+They can be cooked while aiming very close at a campfire.<br/>
 After 10 seconds the marshmallow will be cooked (raw marshmallows cannot be eaten).
 
 ![marshmallow.gif](.docs/marshmallow.gif)

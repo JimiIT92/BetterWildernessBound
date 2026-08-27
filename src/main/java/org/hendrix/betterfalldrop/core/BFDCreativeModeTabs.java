@@ -6,6 +6,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
@@ -14,11 +15,34 @@ import org.hendrix.betterfalldrop.BetterFallDrop;
 import org.hendrix.betterfalldrop.utils.IdentifierUtils;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * {@link BetterFallDrop} {@link CreativeModeTab Creative Mode Tabs}
  */
 public final class BFDCreativeModeTabs {
+
+    /**
+     * Order of {@link DyeColor} for which colored blocks/items should appear in the Creative Mode Inventory
+     */
+    private static final List<DyeColor> CREATIVE_TAB_COLORS = List.of(
+            DyeColor.WHITE,
+            DyeColor.LIGHT_GRAY,
+            DyeColor.GRAY,
+            DyeColor.BLACK,
+            DyeColor.BROWN,
+            DyeColor.RED,
+            DyeColor.ORANGE,
+            DyeColor.YELLOW,
+            DyeColor.LIME,
+            DyeColor.GREEN,
+            DyeColor.CYAN,
+            DyeColor.LIGHT_BLUE,
+            DyeColor.BLUE,
+            DyeColor.PURPLE,
+            DyeColor.MAGENTA,
+            DyeColor.PINK
+    );
 
     //#region Creative Mode Tabs
 
@@ -71,11 +95,7 @@ public final class BFDCreativeModeTabs {
                         addContent(
                                 output,
                                 BFDBlocks.GLASS_STAIRS,
-                                BFDBlocks.GLASS_SLAB,
-                                BFDBlocks.GLASS_WALL,
-                                BFDBlocks.TINTED_GLASS_STAIRS,
-                                BFDBlocks.TINTED_GLASS_SLAB,
-                                BFDBlocks.TINTED_GLASS_WALL
+                                BFDBlocks.TINTED_GLASS_STAIRS
                         );
                         addContent(
                                 output,
@@ -83,7 +103,17 @@ public final class BFDCreativeModeTabs {
                         );
                         addContent(
                                 output,
+                                BFDBlocks.GLASS_SLAB,
+                                BFDBlocks.TINTED_GLASS_SLAB
+                        );
+                        addContent(
+                                output,
                                 BFDBlocks.STAINED_GLASS_SLABS
+                        );
+                        addContent(
+                                output,
+                                BFDBlocks.GLASS_WALL,
+                                BFDBlocks.TINTED_GLASS_WALL
                         );
                         addContent(
                                 output,
@@ -129,7 +159,7 @@ public final class BFDCreativeModeTabs {
      * @param content The {@link ColorCollection<Block> content to add}
      */
     private static void addContent(final CreativeModeTab.Output output, final ColorCollection<Block> content) {
-        addContent(output, content.asList().toArray(new Block[0]));
+        CREATIVE_TAB_COLORS.forEach((color) -> addContent(output, content.pick(color)));
     }
 
     /**

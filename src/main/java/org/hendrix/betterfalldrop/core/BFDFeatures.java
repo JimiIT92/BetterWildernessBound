@@ -54,7 +54,7 @@ public final class BFDFeatures {
         );
         BiomeModifications.addSpawn(
                 DAPPLED_FOREST_BIOME_SELECTOR,
-                MobCategory.AMBIENT,
+                MobCategory.CREATURE,
                 EntityTypes.WOLF,
                 5,
                 1,
