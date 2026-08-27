@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectionContext;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
@@ -50,6 +51,14 @@ public final class BFDFeatures {
                 15,
                 1,
                 2
+        );
+        BiomeModifications.addSpawn(
+                DAPPLED_FOREST_BIOME_SELECTOR,
+                MobCategory.AMBIENT,
+                EntityTypes.WOLF,
+                5,
+                1,
+                4
         );
     }
 
