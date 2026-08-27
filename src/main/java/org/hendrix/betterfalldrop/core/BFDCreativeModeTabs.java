@@ -113,6 +113,7 @@ public final class BFDCreativeModeTabs {
                                 BFDBlocks.YELLOW_SHRUB,
                                 BFDItems.MARSHMALLOW,
                                 BFDItems.COOKED_MARSHMALLOW,
+                                BFDItems.EXPLORER_ARMOR_TRIM_SMITHING_TEMPLATE,
                                 BFDItems.BROWN_BEAR_SPAWN_EGG
                         );
                     })

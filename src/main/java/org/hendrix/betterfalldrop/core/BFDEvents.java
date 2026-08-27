@@ -1,8 +1,12 @@
 package org.hendrix.betterfalldrop.core;
 
 import net.fabricmc.fabric.api.event.player.BlockEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableSource;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -10,6 +14,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.SwingAnimation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.FenceBlock;
@@ -18,6 +23,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.WallSide;
+import net.minecraft.world.level.storage.loot.BuiltInLootTables;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.phys.BlockHitResult;
 import org.hendrix.betterfalldrop.BetterFallDrop;
 import org.jspecify.annotations.Nullable;
@@ -111,6 +121,32 @@ public final class BFDEvents {
         return null;
     }
 
+    /**
+     * Modify the abandoned campsite loot table to add modded content
+     *
+     * @param lootTableResourceKey The {@link ResourceKey<LootTable> Loot Table Resource Key}
+     * @param builder The {@link LootTable.Builder}
+     * @param lootTableSource The {@link LootTableSource}
+     * @param provider The {@link HolderLookup.Provider} reference
+     */
+    private static void modifyAbandonedCampsiteLoot(final ResourceKey<LootTable> lootTableResourceKey, final LootTable.Builder builder, final LootTableSource lootTableSource, final HolderLookup.Provider provider) {
+        final LootPool.Builder explorerPotterySherdLootPoolBuilder = LootPool.lootPool()
+                .when(LootItemRandomChanceCondition.randomChance(0.075F))
+                .add(LootItem.lootTableItem(Items.EXPLORER_POTTERY_SHERD));
+        if(BuiltInLootTables.ABANDONED_CAMP_SECRET_CHEST.equals(lootTableResourceKey)) {
+            builder.pool(
+                    LootPool.lootPool()
+                            .when(LootItemRandomChanceCondition.randomChance(0.1F))
+                            .add(LootItem.lootTableItem(BFDItems.EXPLORER_ARMOR_TRIM_SMITHING_TEMPLATE))
+                            .build()
+            );
+            builder.pool(explorerPotterySherdLootPoolBuilder.build());
+        }
+        if(BuiltInLootTables.ABANDONED_CAMP_BARREL.equals(lootTableResourceKey) || BuiltInLootTables.ABANDONED_CAMP_COMMON_CHEST.equals(lootTableResourceKey)) {
+            builder.pool(explorerPotterySherdLootPoolBuilder.build());
+        }
+    }
+
     //#endregion
 
     /**
@@ -147,6 +183,7 @@ public final class BFDEvents {
     public static void register() {
         BlockEvents.USE_ITEM_ON.register(BFDEvents::disconnectFenceWithAxe);
         BlockEvents.USE_ITEM_ON.register(BFDEvents::disconnectWallWithPickaxe);
+        LootTableEvents.MODIFY.register(BFDEvents::modifyAbandonedCampsiteLoot);
     }
 
 }
