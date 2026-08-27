@@ -5,13 +5,104 @@
 [![](http://cf.way2muchnoise.eu/full_1610513_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/hendrixs-better-fall-drop)
 [![](https://img.shields.io/modrinth/dt/b3i8I42nT?logo=modrinth&label=Modrinth&color=darkgreen)](https://modrinth.com/mod/hendrixs-better-fall-drop)
 
-wip
+The Fall Drop is by far one of the best Minecraft drop so far. It finally introduced some long-requested features
+like concrete slabs and stairs, wool slabs and stairs, red leaves and more...<br/>
+However, it still feels incomplete. That's where Hendrix's Better Fall Drop comes in!<br/>
+This mod aims to improve the Fall Drop and make it even better by introducing new blocks, mobs, foods and game mechanics
 
 -------------------------
 
 ### 🎁 Features
 
-### WIP
+### CALCITE BLOCK FAMILY
+Calcite finally has its own block set, made by slabs, stairs, walls and variants.
+
+![calcite_blocks.png](.docs/calcite_blocks.png)
+
+These new blocks can be obtained by crafting or by using the Stonecutter.
+
+### NEW SLABS, STAIRS, WALLS
+Concrete Walls has been added to complete the Concrete block set.
+
+![concrete_walls.png](.docs/concrete_walls.png)
+
+In addition, Terracotta, Glazed Terracotta, Glass and Tinted Glass got their slabs, stairs and walls.
+
+![slabs_stairs_walls.png](.docs/slabs_stairs_walls.png)
+
+Can be crafted like regular slabs, stairs and walls.
+
+> Tinted Glass slabs, stairs and walls propagate light unlike the full block 
+> Glazed Terracotta slabs, stairs and walls don't attach to Slime Blocks like the full blocks
+
+### DAPPLED MOSS BLOCKS AND SHRUBS
+
+New dappled-themed moss blocks has been added.
+
+![moss_and_shrubs.png](.docs/moss_and_shrubs.png)
+
+Red, Yellow and Orange Moss Blocks can be obtained randomly by using bonemeal on the grass in the Dappled Forest.<br/>
+They can be turned into carpets and can be composted like other Moss Blocks.<br/>
+Alongside the Moss Blocks, Yellow and Orange Shrubs have been added. The new Shrubs will randomly
+generate in the Dappled Forest.<br/>
+Red Shrubs can now also be potted, as well as the Yellow and Orange ones.
+
+Additionally, if you grow a Poplar Tree on a Red, Yellow or Orange Block, you will always get
+a Poplar Tree with the Red, Yellow or Orange leaves respectively, and not a randomized one.
+
+### MARSHMALLOWS
+
+Marshmallows are a new type of food that can be crafted using a stick and a piece of sugar.
+
+They can be cooked while standing very close to a campfire that has no block in front of it.<br/>
+After 10 seconds the marshmallow will be cooked (raw marshmallows cannot be eaten).
+
+[marshmallow.mp4](.docs/marshmallow.mp4)
+
+Restores 2 hunger points and 0.5 saturation, but can be eaten quickly and will return the stick after
+
+### BEARS
+Brown Bears will now spawn in the Dappled Forest 
+
+![brown_bear.png](.docs/brown_bear.png)
+
+They act similar to Polar Bears but, unlike them, they freeze in the Powder Snow.<br/>
+Drops Salmon.
+
+They will try to catch Salmons in a one-block deep water and also empty Bee Nests or Bee Hives if there's
+some honey inside
+
+### AUBURN WOLF
+Wolves will spawn in the Dappled Forest with a new variant: the Auburn Wolf
+
+![auburn_wolf.png](.docs/auburn_wolf.png)
+
+### SHELF MUSHROOMS ON BIRCH TREES
+Shelf Mushrooms can now generate on Birch Trees as well
+
+![birch.png](.docs/birch.png)
+
+### DISCONNECTED FENCES AND WALLS
+Fences and Walls can now be disconnected from Blocks when right-clicked with an Axe or a Pickaxe respectively.
+
+[fences.mp4](.docs/fences.mp4)
+
+This will only work for blocks, you can't disconnect two fences or walls that are connected to each others.
+
+### PUMPKINS IN DAPPLED FOREST
+Pumpkin Patches will sometimes generate in the Dappled Forest
+
+![pumpkins.png](.docs/pumpkins.png)
+### EXPLORER ARMOR SMITHING TEMPLATE
+A new Armor Smithing Template has been added: Explorer.
+
+![explorer_armor_template.png](.docs/explorer_armor_template.png)
+
+One can be found in the Abandoned Campsite Secret Chests with a 10% chance.<br/>
+Can be duplicated using Calcite
+
+### EXPLORER POTTERY SHERD IN ABANDONED CAMPSITES
+One Explorer Pottery Sherds can now be found in all types of Abandoned Campsite Chests with a 7.5% chance
 
 -------------------------
 
