@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:tinted_glass",
-  "result": {
-    "id": "betterfalldrop:tinted_glass_stairs"
-  }
-}

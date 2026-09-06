@@ -1,0 +1,21 @@
+{
+  "assets": {
+    "angry": "betterwildernessbound:entity/wolf/wolf_auburn_angry",
+    "tame": "betterwildernessbound:entity/wolf/wolf_auburn_tame",
+    "wild": "betterwildernessbound:entity/wolf/wolf_auburn"
+  },
+  "baby_assets": {
+    "angry": "betterwildernessbound:entity/wolf/wolf_auburn_angry_baby",
+    "tame": "betterwildernessbound:entity/wolf/wolf_auburn_tame_baby",
+    "wild": "betterwildernessbound:entity/wolf/wolf_auburn_baby"
+  },
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": "minecraft:dappled_forest"
+      },
+      "priority": 1
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "glazed_terracotta_walls",
+  "ingredients": [
+    "minecraft:green_dye",
+    [
+      "betterwildernessbound:white_glazed_terracotta_wall",
+      "betterwildernessbound:orange_glazed_terracotta_wall",
+      "betterwildernessbound:magenta_glazed_terracotta_wall",
+      "betterwildernessbound:light_blue_glazed_terracotta_wall",
+      "betterwildernessbound:yellow_glazed_terracotta_wall",
+      "betterwildernessbound:lime_glazed_terracotta_wall",
+      "betterwildernessbound:pink_glazed_terracotta_wall",
+      "betterwildernessbound:gray_glazed_terracotta_wall",
+      "betterwildernessbound:light_gray_glazed_terracotta_wall",
+      "betterwildernessbound:cyan_glazed_terracotta_wall",
+      "betterwildernessbound:purple_glazed_terracotta_wall",
+      "betterwildernessbound:blue_glazed_terracotta_wall",
+      "betterwildernessbound:brown_glazed_terracotta_wall",
+      "betterwildernessbound:red_glazed_terracotta_wall",
+      "betterwildernessbound:black_glazed_terracotta_wall"
+    ]
+  ],
+  "result": {
+    "id": "betterwildernessbound:green_glazed_terracotta_wall"
+  }
+}

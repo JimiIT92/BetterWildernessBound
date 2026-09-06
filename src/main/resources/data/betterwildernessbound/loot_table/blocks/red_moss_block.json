@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "betterwildernessbound:red_moss_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "betterwildernessbound:blocks/red_moss_block"
+}

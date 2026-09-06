@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "betterwildernessbound:calcite_bricks",
+  "result": {
+    "count": 2,
+    "id": "betterwildernessbound:calcite_brick_slab"
+  }
+}

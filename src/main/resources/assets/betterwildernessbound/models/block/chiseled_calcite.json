@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "betterwildernessbound:block/chiseled_calcite"
+  }
+}

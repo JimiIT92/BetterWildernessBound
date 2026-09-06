@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:pink_glazed_terracotta",
-  "result": {
-    "count": 2,
-    "id": "betterfalldrop:pink_glazed_terracotta_slab"
-  }
-}

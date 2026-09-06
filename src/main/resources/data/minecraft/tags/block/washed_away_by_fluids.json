@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "betterfalldrop:red_moss_carpet",
-    "betterfalldrop:orange_moss_carpet",
-    "betterfalldrop:yellow_moss_carpet",
-    "betterfalldrop:orange_shrub",
-    "betterfalldrop:yellow_shrub"
+    "betterwildernessbound:red_moss_carpet",
+    "betterwildernessbound:orange_moss_carpet",
+    "betterwildernessbound:yellow_moss_carpet",
+    "betterwildernessbound:orange_shrub",
+    "betterwildernessbound:yellow_shrub"
   ]
 }

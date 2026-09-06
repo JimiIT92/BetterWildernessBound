@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_glass_stairs",
+  "ingredients": [
+    "minecraft:gray_dye",
+    [
+      "betterwildernessbound:white_stained_glass_stairs",
+      "betterwildernessbound:orange_stained_glass_stairs",
+      "betterwildernessbound:magenta_stained_glass_stairs",
+      "betterwildernessbound:light_blue_stained_glass_stairs",
+      "betterwildernessbound:yellow_stained_glass_stairs",
+      "betterwildernessbound:lime_stained_glass_stairs",
+      "betterwildernessbound:pink_stained_glass_stairs",
+      "betterwildernessbound:light_gray_stained_glass_stairs",
+      "betterwildernessbound:cyan_stained_glass_stairs",
+      "betterwildernessbound:purple_stained_glass_stairs",
+      "betterwildernessbound:blue_stained_glass_stairs",
+      "betterwildernessbound:brown_stained_glass_stairs",
+      "betterwildernessbound:green_stained_glass_stairs",
+      "betterwildernessbound:red_stained_glass_stairs",
+      "betterwildernessbound:black_stained_glass_stairs"
+    ]
+  ],
+  "result": {
+    "id": "betterwildernessbound:gray_stained_glass_stairs"
+  }
+}

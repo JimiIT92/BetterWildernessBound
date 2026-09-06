@@ -1,20 +1,20 @@
 {
   "replace": false,
   "values": [
-    "#betterfalldrop:terracotta_stairs",
-    "#betterfalldrop:terracotta_slabs",
-    "#betterfalldrop:glazed_terracotta_stairs",
-    "#betterfalldrop:glazed_terracotta_slabs",
-    "#betterfalldrop:glass_stairs",
-    "#betterfalldrop:glass_slabs",
-    "betterfalldrop:calcite_stairs",
-    "betterfalldrop:calcite_slab",
-    "betterfalldrop:polished_calcite_stairs",
-    "betterfalldrop:polished_calcite_slab",
-    "betterfalldrop:calcite_brick_stairs",
-    "betterfalldrop:calcite_brick_slab",
-    "betterfalldrop:polished_calcite",
-    "betterfalldrop:chiseled_calcite",
-    "betterfalldrop:calcite_bricks"
+    "#betterwildernessbound:terracotta_stairs",
+    "#betterwildernessbound:terracotta_slabs",
+    "#betterwildernessbound:glazed_terracotta_stairs",
+    "#betterwildernessbound:glazed_terracotta_slabs",
+    "#betterwildernessbound:glass_stairs",
+    "#betterwildernessbound:glass_slabs",
+    "betterwildernessbound:calcite_stairs",
+    "betterwildernessbound:calcite_slab",
+    "betterwildernessbound:polished_calcite_stairs",
+    "betterwildernessbound:polished_calcite_slab",
+    "betterwildernessbound:calcite_brick_stairs",
+    "betterwildernessbound:calcite_brick_slab",
+    "betterwildernessbound:polished_calcite",
+    "betterwildernessbound:chiseled_calcite",
+    "betterwildernessbound:calcite_bricks"
   ]
 }

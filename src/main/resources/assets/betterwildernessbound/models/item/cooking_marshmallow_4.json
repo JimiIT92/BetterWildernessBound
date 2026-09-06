@@ -1,0 +1,6 @@
+{
+  "parent": "betterwildernessbound:item/cooking_marshmallow_1",
+  "textures": {
+    "layer0": "betterwildernessbound:item/cooking_marshmallow_4"
+  }
+}

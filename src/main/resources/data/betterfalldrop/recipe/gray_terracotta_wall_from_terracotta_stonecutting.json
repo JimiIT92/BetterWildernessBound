@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:gray_terracotta",
-  "result": {
-    "id": "betterfalldrop:gray_terracotta_wall"
-  }
-}

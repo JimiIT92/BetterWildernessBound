@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-This repository contains the source code for [Hendrix's Better Fall Drop](https://curseforge.com/minecraft/mc-mods/hendrixs-better-fall-drop).
+This repository contains the source code for [Hendrix's Better Wilderness Bound](https://curseforge.com/minecraft/mc-mods/hendrixs-better-wilderness-bound).
 
 Only latest major release (and relative minors) will be supported.
 
@@ -10,7 +10,7 @@ Any other release prior to these will be automatically considered deprecated as 
 
 ## Reporting a Vulnerability
 
-The only place to report a bug or an issue is the [Issue Tracker](https://github.com/JimiIT92/BetterFallDrop/issues) of this repository.
+The only place to report a bug or an issue is the [Issue Tracker](https://github.com/JimiIT92/BetterWildernessBound/issues) of this repository.
 
 **DO NOT SEND EMAILS**.
 

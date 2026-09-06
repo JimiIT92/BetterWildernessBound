@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "terracotta_walls",
+  "ingredients": [
+    "minecraft:purple_dye",
+    [
+      "betterwildernessbound:white_terracotta_wall",
+      "betterwildernessbound:orange_terracotta_wall",
+      "betterwildernessbound:magenta_terracotta_wall",
+      "betterwildernessbound:light_blue_terracotta_wall",
+      "betterwildernessbound:yellow_terracotta_wall",
+      "betterwildernessbound:lime_terracotta_wall",
+      "betterwildernessbound:pink_terracotta_wall",
+      "betterwildernessbound:gray_terracotta_wall",
+      "betterwildernessbound:light_gray_terracotta_wall",
+      "betterwildernessbound:cyan_terracotta_wall",
+      "betterwildernessbound:blue_terracotta_wall",
+      "betterwildernessbound:brown_terracotta_wall",
+      "betterwildernessbound:green_terracotta_wall",
+      "betterwildernessbound:red_terracotta_wall",
+      "betterwildernessbound:black_terracotta_wall"
+    ]
+  ],
+  "result": {
+    "id": "betterwildernessbound:purple_terracotta_wall"
+  }
+}

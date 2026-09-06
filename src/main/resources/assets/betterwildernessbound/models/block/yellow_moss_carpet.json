@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "betterwildernessbound:block/yellow_moss_block"
+  }
+}

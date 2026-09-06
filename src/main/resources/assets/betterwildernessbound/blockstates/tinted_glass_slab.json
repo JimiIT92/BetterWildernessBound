@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "betterwildernessbound:block/tinted_glass_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/tinted_glass"
+    },
+    "type=top": {
+      "model": "betterwildernessbound:block/tinted_glass_slab_top"
+    }
+  }
+}

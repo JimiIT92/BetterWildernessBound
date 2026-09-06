@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_glass_walls",
+  "ingredients": [
+    "minecraft:cyan_dye",
+    [
+      "betterwildernessbound:white_stained_glass_wall",
+      "betterwildernessbound:orange_stained_glass_wall",
+      "betterwildernessbound:magenta_stained_glass_wall",
+      "betterwildernessbound:light_blue_stained_glass_wall",
+      "betterwildernessbound:yellow_stained_glass_wall",
+      "betterwildernessbound:lime_stained_glass_wall",
+      "betterwildernessbound:pink_stained_glass_wall",
+      "betterwildernessbound:gray_stained_glass_wall",
+      "betterwildernessbound:light_gray_stained_glass_wall",
+      "betterwildernessbound:purple_stained_glass_wall",
+      "betterwildernessbound:blue_stained_glass_wall",
+      "betterwildernessbound:brown_stained_glass_wall",
+      "betterwildernessbound:green_stained_glass_wall",
+      "betterwildernessbound:red_stained_glass_wall",
+      "betterwildernessbound:black_stained_glass_wall"
+    ]
+  ],
+  "result": {
+    "id": "betterwildernessbound:cyan_stained_glass_wall"
+  }
+}

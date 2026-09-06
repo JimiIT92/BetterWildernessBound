@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_glass_slabs",
+  "ingredients": [
+    "minecraft:gray_dye",
+    [
+      "betterwildernessbound:white_stained_glass_slab",
+      "betterwildernessbound:orange_stained_glass_slab",
+      "betterwildernessbound:magenta_stained_glass_slab",
+      "betterwildernessbound:light_blue_stained_glass_slab",
+      "betterwildernessbound:yellow_stained_glass_slab",
+      "betterwildernessbound:lime_stained_glass_slab",
+      "betterwildernessbound:pink_stained_glass_slab",
+      "betterwildernessbound:light_gray_stained_glass_slab",
+      "betterwildernessbound:cyan_stained_glass_slab",
+      "betterwildernessbound:purple_stained_glass_slab",
+      "betterwildernessbound:blue_stained_glass_slab",
+      "betterwildernessbound:brown_stained_glass_slab",
+      "betterwildernessbound:green_stained_glass_slab",
+      "betterwildernessbound:red_stained_glass_slab",
+      "betterwildernessbound:black_stained_glass_slab"
+    ]
+  ],
+  "result": {
+    "id": "betterwildernessbound:gray_stained_glass_slab"
+  }
+}

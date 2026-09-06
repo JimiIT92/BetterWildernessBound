@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "betterfalldrop:calcite_bricks",
-  "result": {
-    "id": "betterfalldrop:calcite_brick_stairs"
-  }
-}

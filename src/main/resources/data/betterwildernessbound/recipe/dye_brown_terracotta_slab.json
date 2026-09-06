@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "terracotta_slabs",
+  "ingredients": [
+    "minecraft:brown_dye",
+    [
+      "betterwildernessbound:white_terracotta_slab",
+      "betterwildernessbound:orange_terracotta_slab",
+      "betterwildernessbound:magenta_terracotta_slab",
+      "betterwildernessbound:light_blue_terracotta_slab",
+      "betterwildernessbound:yellow_terracotta_slab",
+      "betterwildernessbound:lime_terracotta_slab",
+      "betterwildernessbound:pink_terracotta_slab",
+      "betterwildernessbound:gray_terracotta_slab",
+      "betterwildernessbound:light_gray_terracotta_slab",
+      "betterwildernessbound:cyan_terracotta_slab",
+      "betterwildernessbound:purple_terracotta_slab",
+      "betterwildernessbound:blue_terracotta_slab",
+      "betterwildernessbound:green_terracotta_slab",
+      "betterwildernessbound:red_terracotta_slab",
+      "betterwildernessbound:black_terracotta_slab"
+    ]
+  ],
+  "result": {
+    "id": "betterwildernessbound:brown_terracotta_slab"
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:cyan_glazed_terracotta",
-  "result": {
-    "id": "betterfalldrop:cyan_glazed_terracotta_stairs"
-  }
-}

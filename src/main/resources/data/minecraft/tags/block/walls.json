@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "#betterfalldrop:concrete_walls",
-    "#betterfalldrop:terracotta_walls",
-    "#betterfalldrop:glazed_terracotta_walls",
-    "#betterfalldrop:glass_walls",
-    "betterfalldrop:calcite_wall",
-    "betterfalldrop:polished_calcite_wall",
-    "betterfalldrop:calcite_brick_wall"
+    "#betterwildernessbound:concrete_walls",
+    "#betterwildernessbound:terracotta_walls",
+    "#betterwildernessbound:glazed_terracotta_walls",
+    "#betterwildernessbound:glass_walls",
+    "betterwildernessbound:calcite_wall",
+    "betterwildernessbound:polished_calcite_wall",
+    "betterwildernessbound:calcite_brick_wall"
   ]
 }

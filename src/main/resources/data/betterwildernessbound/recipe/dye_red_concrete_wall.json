@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "concrete_walls",
+  "ingredients": [
+    "minecraft:red_dye",
+    [
+      "betterwildernessbound:white_concrete_wall",
+      "betterwildernessbound:orange_concrete_wall",
+      "betterwildernessbound:magenta_concrete_wall",
+      "betterwildernessbound:light_blue_concrete_wall",
+      "betterwildernessbound:yellow_concrete_wall",
+      "betterwildernessbound:lime_concrete_wall",
+      "betterwildernessbound:pink_concrete_wall",
+      "betterwildernessbound:gray_concrete_wall",
+      "betterwildernessbound:light_gray_concrete_wall",
+      "betterwildernessbound:cyan_concrete_wall",
+      "betterwildernessbound:purple_concrete_wall",
+      "betterwildernessbound:blue_concrete_wall",
+      "betterwildernessbound:brown_concrete_wall",
+      "betterwildernessbound:green_concrete_wall",
+      "betterwildernessbound:black_concrete_wall"
+    ]
+  ],
+  "result": {
+    "id": "betterwildernessbound:red_concrete_wall"
+  }
+}

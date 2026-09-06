@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:magenta_glazed_terracotta",
+  "result": {
+    "id": "betterwildernessbound:magenta_glazed_terracotta_stairs"
+  }
+}
