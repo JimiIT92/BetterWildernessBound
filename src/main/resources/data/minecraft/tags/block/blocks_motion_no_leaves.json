@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "#betterwildernessbound:glass_stairs",
-    "#betterwildernessbound:glass_slabs",
-    "#betterwildernessbound:glass_walls"
+    "#betterwildernessbound:glass_slabs"
   ]
 }

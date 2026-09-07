@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:cyan_stained_glass",
-  "result": {
-    "id": "betterwildernessbound:cyan_stained_glass_wall"
-  }
-}

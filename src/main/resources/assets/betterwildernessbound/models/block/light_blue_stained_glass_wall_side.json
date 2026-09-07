@@ -1,6 +1,0 @@
-{
-  "parent": "betterwildernessbound:block/template_glass_wall_side",
-  "textures": {
-    "wall": "minecraft:block/light_blue_stained_glass"
-  }
-}

@@ -112,15 +112,6 @@ public final class BFDCreativeModeTabs {
                         );
                         addContent(
                                 output,
-                                BFDBlocks.GLASS_WALL,
-                                BFDBlocks.TINTED_GLASS_WALL
-                        );
-                        addContent(
-                                output,
-                                BFDBlocks.STAINED_GLASS_WALLS
-                        );
-                        addContent(
-                                output,
                                 BFDBlocks.RED_MOSS_BLOCK,
                                 BFDBlocks.RED_MOSS_CARPET,
                                 BFDBlocks.ORANGE_MOSS_BLOCK,

@@ -26,13 +26,14 @@ Concrete Walls has been added to complete the Concrete block set.
 
 ![concrete_walls.png](.docs/concrete_walls.png)
 
-In addition, Terracotta, Glazed Terracotta, Glass and Tinted Glass got their slabs, stairs and walls.
+In addition, Terracotta and Glazed Terracotta got their slabs, stairs and walls.
+Glass, Tinted Glass and Stained Glass slabs and stairs has also been added.
 
 ![slabs_stairs_walls.png](.docs/slabs_stairs_walls.png)
 
 Can be crafted like regular slabs, stairs and walls.
 
-> Tinted Glass slabs, stairs and walls propagate light unlike the full block 
+> Tinted Glass slabs and stairs propagate light unlike the full block 
 > Glazed Terracotta slabs, stairs and walls don't attach to Slime Blocks like the full blocks
 
 ### DAPPLED MOSS BLOCKS AND SHRUBS

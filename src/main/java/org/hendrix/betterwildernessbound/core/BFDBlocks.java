@@ -41,15 +41,12 @@ public final class BFDBlocks {
 
     public static final Block GLASS_STAIRS = registerStair(Blocks.GLASS);
     public static final Block GLASS_SLAB = registerSlab(Blocks.GLASS);
-    public static final Block GLASS_WALL = registerWall(Blocks.GLASS);
 
     public static final Block TINTED_GLASS_STAIRS = registerStair(Blocks.TINTED_GLASS);
     public static final Block TINTED_GLASS_SLAB = registerSlab(Blocks.TINTED_GLASS);
-    public static final Block TINTED_GLASS_WALL = registerWall(Blocks.TINTED_GLASS);
 
     public static final ColorCollection<Block> STAINED_GLASS_STAIRS = registerStairs("stained_glass", Blocks.STAINED_GLASS);
     public static final ColorCollection<Block> STAINED_GLASS_SLABS = registerSlabs("stained_glass", Blocks.STAINED_GLASS);
-    public static final ColorCollection<Block> STAINED_GLASS_WALLS = registerWalls("stained_glass", Blocks.STAINED_GLASS);
 
     public static final Block CALCITE_STAIRS = registerStair(Blocks.CALCITE);
     public static final Block CALCITE_SLAB = registerSlab(Blocks.CALCITE);
