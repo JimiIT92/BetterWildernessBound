@@ -134,6 +134,16 @@ public final class BrownBear extends PolarBear {
         protected @NonNull AABB getTargetSearchArea(final double followDistance) {
             return this.mob.getBoundingBox().inflate(followDistance, 1, followDistance);
         }
+
+        /**
+         * Check whether this goal can be used
+         *
+         * @return False if the bear is a baby
+         */
+        @Override
+        public boolean canUse() {
+            return !BrownBear.this.isBaby();
+        }
     }
 
     /**
@@ -215,6 +225,16 @@ public final class BrownBear extends PolarBear {
         @Override
         public boolean canContinueToUse() {
             return super.canContinueToUse() || this.isExtractingHoney;
+        }
+
+        /**
+         * Check whether this goal can be used
+         *
+         * @return False if the bear is a baby
+         */
+        @Override
+        public boolean canUse() {
+            return !BrownBear.this.isBaby();
         }
     }
 
