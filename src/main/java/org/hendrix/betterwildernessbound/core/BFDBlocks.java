@@ -1,5 +1,6 @@
 package org.hendrix.betterwildernessbound.core;
 
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntPr
 import org.hendrix.betterwildernessbound.BetterWildernessBound;
 import org.hendrix.betterwildernessbound.utils.IdentifierUtils;
 
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.function.Function;
 
@@ -307,9 +309,30 @@ public final class BFDBlocks {
     }
 
     /**
+     * Register some flammable blocks
+     *
+     * @param igniteOdds The ignite odds
+     * @param blocks The blocks
+     */
+    private static void registerFlammableBlocks(final int igniteOdds, final Block... blocks) {
+        Arrays.stream(blocks).forEach(block -> FlammableBlockRegistry.getDefaultInstance().add(block, igniteOdds, 100));
+    }
+
+    /**
      * Register all {@link Block Blocks}
      */
     public static void register() {
-
+        registerFlammableBlocks(5,
+                RED_MOSS_BLOCK,
+                YELLOW_MOSS_BLOCK,
+                ORANGE_MOSS_BLOCK,
+                RED_MOSS_CARPET,
+                YELLOW_MOSS_CARPET,
+                ORANGE_MOSS_CARPET
+        );
+        registerFlammableBlocks(60,
+                YELLOW_SHRUB,
+                ORANGE_SHRUB
+        );
     }
 }
